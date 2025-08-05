@@ -1,10 +1,8 @@
-package deque;
-
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-public class LinkedListDeque61B<T> implements Deque61B<T> {
+public class LinkedListDeque61B<T> implements Deque61B<T>{
+
     public LinkedListDeque61B() {
         sentinel = new Node();
         sentinel.item = null;
@@ -12,10 +10,12 @@ public class LinkedListDeque61B<T> implements Deque61B<T> {
         sentinel.prev = sentinel;
     }
 
-    @Override
-    public Iterator<T> iterator() {
-        return null;
-    }
+//    public LinkedListDeque61B(T x) {
+//        sentinel = new Node();
+//        sentinel.item = x;
+//        sentinel.next = sentinel;
+//        sentinel.prev = sentinel;
+//    }
 
     public class Node {
         public T item;

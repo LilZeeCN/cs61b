@@ -1,11 +1,8 @@
-package deque;
-
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
-
-public class ArrayDeque61B<T> implements Deque61B<T> {
+import java.lang.Math;
+public class ArrayDeque61B<T> implements Deque61B<T>{
     private int f;
     private int l;
     T[] list = (T[]) new Object[8];
@@ -61,11 +58,6 @@ public class ArrayDeque61B<T> implements Deque61B<T> {
 
     @Override
     public T getRecursive(int index) {
-        return null;
-    }
-
-    @Override
-    public Iterator<T> iterator() {
         return null;
     }
 }
